@@ -1,0 +1,124 @@
+/*
+*
+* This CSS template will customize WordPress.org login pages:
+* 
+* Login page:           /wp-login.php
+* Register page:        /wp-login.php?action=register
+* Lost Password page:   /wp-login.php?action=lostpassword
+*
+* @site        https://tudoparawp.com.br 
+* @author      Guga Alves
+* @twitter     @gugaalves (Feel free to ping me there, feedbacks and greetings are welcome)
+* @url         Originally shared on Guga's GIST: https://gist.github.com/gugaalves
+* @version     1.0
+*
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+        1. GENERAL
+        2. LOGIN PAGE
+        3. REGISTER PAGE
+        4. LOST PASSWORD PAGE
+----------------------------------------------------------------*/
+/* 1. General
+*
+*   Those changes will be applied to all wp-login pages
+*
+*   Image settings */
+    body.login {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    /* Change font colors*/
+    .login form,
+    .login #login_error,
+    .login .message,
+    .login .success,
+    .login #backtoblog a,
+    .login #nav a,
+    .login label,
+    #login form p {
+        color:#000;
+    }
+    /* Replace WP logo with your own logo */
+    .login h1 a {
+        background-image: url('http://localhost/meuprimeirotema/wp-content/uploads/2021/01/logo.png');
+    }
+/* 2. Login page
+*
+*   Customizing Login page only
+*
+*   Change background - Background position should be changed depending on which image you'll use */
+    body.login-action-login {
+        background-image: url('https://img.wallpapic-br.com/i1239-823-327/medium/areia-natureza-duna-praia-imagem-de-fundo.jpg');
+        background-position: center center;
+    }
+    /* Change margins to better position with the image used on that page */
+    .login-action-login #login {
+        margin: auto auto 10% auto;
+    }
+    /* Opacity on every form for better visualisation of your stunning background image */
+    .login-action-login form,
+    .login-action-login #login_error,
+    .login-action-login .message,
+    .login-action-login .success {
+        background-color: rgba(0,0,0,0.1);
+        box-shadow: none;
+    }
+/* 3. Register page 
+*
+*   Customizing Registration page only
+*
+* Change background - Background position should be changed depending on which image you'll use */
+    body.login-action-register {
+        background-image: url('/img/register-page.jpg');
+        background-position: center right;
+    }
+    /* Change margins to better position with the image used on that page */
+    .login-action-register #login {
+        margin: auto 10% auto auto;
+    }
+    /* Opacity on every form */
+    .login-action-register form,
+    .login-action-register #login_error,
+    .login-action-register .message,
+    .login-action-register .success {
+        background-color: rgba(0,0,0,0.1);
+        box-shadow: none;
+    }
+    /* Changing WordPress logo to grayscale - better contrast with the image used on that page */
+    .login-action-register h1 a {
+        filter: grayscale(100%);
+        background-image:url('/img/wordpress-logo.png');
+    }
+/* 4. LOST PASSWORD PAGE
+*
+*   Customizing Lost password page only
+*
+*   Note: If you're using WooCommerce, that plugin uses its own lost password page so you may need to not use that part and create your own customization for that Woo page with body tag .woocommerce-lost-password !
+*   If you're using some other plugin managing wp-login pages (like Buddypress) you may need to visit each page, check which body classes should be used and create your own code (classes may be different on custom plugins)
+*    
+*    Change background - Background position should be changed depending on which image you'll use */
+    body.login-action-lostpassword {
+        background-image: url('/img/lost-password-page.jpg');
+        background-position: center right;
+    }
+    /* Change margins to better position with the image used on that page */
+    .login-action-lostpassword #login {
+        margin: auto 10% auto auto;
+    }
+    /* Opacity on every form */
+    .login-action-lostpassword form,
+    .login-action-lostpassword #login_error,
+    .login-action-lostpassword .message,
+    .login-action-lostpassword .success {
+        background-color: rgba(0,0,0,0.1);
+        box-shadow: none;
+    }
+/*
+*
+*   That's it, hope you enjoy it.
+*   Thoughts, questions, feedbacks? Feel free to ping me on twitter, @gugaalves
+*
+*/
